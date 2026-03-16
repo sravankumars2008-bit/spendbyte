@@ -1,7 +1,7 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-
 <head>
+
 <title>SpendByte</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,45 +9,87 @@
 <style>
 
 body{
-font-family: Arial;
 margin:0;
-background:#f5f5f5;
+font-family:Arial;
+background:#0f172a;
+color:white;
 text-align:center;
 }
 
 header{
-background:#111;
-color:white;
-padding:40px 20px;
+padding:60px 20px;
+background:linear-gradient(135deg,#1e293b,#020617);
+}
+
+h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+p{
+color:#94a3b8;
 }
 
 .container{
-padding:30px;
+padding:40px 20px;
 }
 
 button{
-background:#1a73e8;
+background:#3b82f6;
 color:white;
 border:none;
-padding:18px 35px;
-font-size:20px;
+padding:18px 40px;
+font-size:18px;
 border-radius:10px;
 cursor:pointer;
+transition:0.3s;
 }
 
 button:hover{
-background:#0f5bd4;
+background:#2563eb;
+transform:scale(1.05);
 }
 
 .features{
-margin-top:30px;
-font-size:18px;
+margin-top:40px;
 }
 
-.note{
-margin-top:20px;
-color:gray;
+.feature-box{
+background:#1e293b;
+padding:20px;
+margin:15px auto;
+max-width:350px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.feature-box:hover{
+transform:translateY(-5px);
+}
+
+.instructions{
+margin-top:50px;
+background:#020617;
+padding:30px;
+border-radius:10px;
+max-width:400px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.footer{
+margin-top:50px;
+color:#64748b;
 font-size:14px;
+}
+
+.fade{
+animation:fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
 }
 
 </style>
@@ -56,32 +98,62 @@ font-size:14px;
 
 <body>
 
-<header>
-<h1>SpendByte</h1>
-<p>Easy tracking of your expenses</p>
-</header>
+<header class="fade">
 
-<div class="container">
+<h1>SpendByte</h1>
+
+<p>Easy tracking of your expenses</p>
+
+<br>
 
 <a href="https://drive.google.com/uc?export=download&id=1ZjNSNzqL1cybJxRlN8JvspIccnM21jJU">
+
 <button>Download APK</button>
+
 </a>
 
-<div class="features">
+<p style="margin-top:10px;">Version 1.0 • 51 MB • Android</p>
+
+</header>
+
+
+<div class="container fade">
+
 <h2>Features</h2>
 
-<p>✔ Easy tracking of your expenses</p>
-<p>✔ Smart reminders</p>
-<p>✔ Auto scheduling</p>
+<div class="feature-box">✔ Easy tracking of expenses</div>
+
+<div class="feature-box">✔ Smart reminders</div>
+
+<div class="feature-box">✔ Auto scheduling</div>
 
 </div>
 
-<div class="note">
-<p>After downloading, open the APK to install on your Android device.</p>
-</div>
+
+<div class="instructions fade">
+
+<h2>How to Install</h2>
+
+<p>1️⃣ Download the APK file</p>
+
+<p>2️⃣ Open the downloaded file</p>
+
+<p>3️⃣ Allow "Install unknown apps"</p>
+
+<p>4️⃣ Tap Install</p>
 
 </div>
 
+
+<div class="footer">
+
+<p>Made by Sravan Kumar</p>
+
+</div>
+
+
+</body>
+</html>
 </body>
 
 </html>
